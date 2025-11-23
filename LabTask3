@@ -1,0 +1,29 @@
+import java.util.*;
+public class ArrayElements {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the size of the array: ");
+        int size = sc.nextInt();
+
+        int [] original = new int[size];
+        int [] reverse = new int[size];
+
+        System.out.println("Enter the elements of the array: ");
+        for(int i = 0 ; i<size ; i++){
+            original [i] = sc.nextInt();
+        }
+
+        //reverse
+        for(int i = 0 ; i<size ; i++){
+            reverse [i] = original[size - 1 - i] ;
+        }
+
+        //displlay output
+        System.out.print("The reverse array elements are: ");
+         for (int i = 0 ; i < size ; i++){
+            System.out.print(reverse[i]+ " ");
+         }
+         
+    }
+}
